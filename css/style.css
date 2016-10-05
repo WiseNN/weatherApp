@@ -1,0 +1,329 @@
+*{margin:0px;
+}
+.fullBody{
+height:100%;
+  width:100%;
+  overflow:auto;
+	background-size:cover;
+  background-color: black;
+    background-image : url('http://s.hswstatic.com/gif/water-life-crop.jpg');
+   transition: background 3s linear;
+     -webkit-transition: background 5s linear;
+
+
+}
+
+.header{
+  
+  box-shadow:0px 60px 20px -10px black inset,0px -10px 20px -10px black inset;
+  background-color:rgba(67, 49, 76, 1.0);
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:160px;
+  color:rgba(255,255,255,1);
+  font-family:sans-Serif;
+  z-index: 50;
+}
+
+.break{
+  box-shadow:0px -3px 1px 1px rgba(204, 204, 204, 0.24),0px 2px 3px 1px rgba(0, 0, 0, 0.45);
+  border:rgba(0,0,0,0,.1);
+    margin-top:1.5px;
+  margin-left:2%;
+  width:95%;
+
+}
+.appTitleBox{
+box-shadow:0px 20px 20px -5px rgba(72, 6, 132, 0.72) inset;  
+}
+
+
+.appTitle{
+  font-size:40px;
+  margin-left:2%;
+  margin-top:20px;
+
+}
+.query, .headButtons{
+  //border:solid green 3px;
+  position:fixed;
+  top:104px;
+  width:51%;
+  height:40px;
+  padding-left:2%;
+
+
+}
+.inVal{
+  border:grooved green 2px;
+ height:inherit;
+  width:25%;
+	margin-right:22px;
+  border-radius:50px;
+  color:black;
+  text-align:center;
+}
+
+#state,#zipcode{
+	width:20%;
+}
+#submit,#reset{
+  border:grooved green 2px;
+ height:inherit;
+  width:25%;
+  border-radius:50px;
+  color:black;
+  text-align:center;
+}
+#submit{
+  margin-left:30%;
+  margin-right:5%;
+}
+.headButtons{
+  padding-right:0px;
+  margin-left:54%;
+  width:42.7%;
+}
+
+#city,#country{
+      margin-right:3%;
+}
+.location-container{
+   display:none;/* slide Down */
+  position: fixed;
+    top:145px;
+    left:63% ;
+    min-width: 245px;
+  background-color:white;
+    box-shadow:0px 4px 2px 1px black,0px 0px 3px 4px rgba(255,255,255,.4) inset;;
+   background-color:rgba(0,0,0,.6);
+  border-radius:9px;
+  z-index:40;
+	padding-left:9px;
+	padding-right:9px;
+		padding-top:25px;
+  height: 62%;
+  overflow-y: scroll;
+  overfloe-x: none;
+}
+.location{
+
+
+}
+
+.location>dl>dt{
+
+  border: groove rgba(255,255,255,.13) 1px;
+	float:left;
+  border-radius:10px;
+  padding:5px 0px 0px 6px;
+  background-color:rgba(0,0,0,.6);
+  color:rgba(255,255,255,.6);	
+}
+
+.allTemp{
+  color: green;
+}
+
+.downArrow,.upArrow{
+  display:none;
+	font-size:80%;
+}
+.upArrow{
+	position:relative;
+	top:-9px;
+	left:3px;
+	transform: rotate(40deg);	
+  color:rgb(230, 16, 92);
+
+}
+.downArrow{
+	position:relative;
+	left:2px;
+	transform:rotate(40deg);
+  color:rgb(28, 189, 218);
+}
+.locIcons{
+	display:inline-block;
+		position:relative;
+		top:-21px;
+	left:66px;
+	height:50px;
+	width:70px;
+	margin-bottom:-17px;
+//	border: solid white 1px;
+/*	background-image:url(http://vibecityent.com/blacksota/SVG/weatherSVG/colorful/svg/47.svg);*/
+	background-size:contain;
+	background-repeat:no-repeat;
+	
+
+	
+}
+
+.listWrapper{
+
+	//font-size:20px;
+}
+#li1,#li2,#li3,#li4,#li5{
+  margin-bottom:10px;
+  font-size:100%;
+	width:97%;
+}
+.slideBar{
+  position:fixed;
+  top:140px;
+  left:-310px;
+  width:300px;
+  height: 64%;
+  background-color:rgba(0,0,0,.8);
+  box-shadow:-15px 0px 10px -10px white inset,7px -10px 7px 4px grey inset; */
+    z-index:39;
+  border-radius:9px;
+  border-right:solid black 3px;
+}
+.slideBar-title
+{
+  border:solid grey 1px;
+position:absolute;
+  height:12%;
+  width:80%;
+  top:10%;
+  left:10%;
+  border-radius:3px;
+  color:white;
+  text-align:center;
+}
+
+#barTitle{
+	display:none;
+	margin-top:7%;
+}
+
+
+.imageContainer{
+
+	//border:solid grey 1px;
+position:absolute;
+ height:30%;
+  width:80%;
+  top:30%;
+  left:10%;
+  border-radius:3px;
+	padding:0px;
+	margin:0px;
+
+}
+#myImage{
+  display:none;
+	position: absolute;
+	top:20px;
+  left: 60px;
+ background-repeat: no-repeat;
+  height:85%;
+   //border: solid black 2px;
+
+    width:60%;
+	background-size:contain;
+}
+#iconText{
+	  display:none;
+	color: white;
+	font-size: 120%;
+	padding-left:2%;
+}
+.temp-gauge{
+     display:none; 
+	//border:solid grey 1px;
+    position:absolute;
+    height:30%;
+    width:77%;
+    top:63%;
+    left:11.5%;
+    background-color:rgba(0,0,0,.1);
+    border-radius:3px;
+    color:white;
+    font-size:800%;
+    font-family: monospace;
+}
+#littleF{
+  display:none;
+	position: absolute;
+	top:69%;
+	left:70%;
+  color:white;
+	font-size:18px;
+
+}
+.settings, {
+position:fixed;
+  /*
+     When height is at 50%, the buttons are in full viewport
+  */
+  height:6%;
+  bottom:107.4px;
+  left:-310px;
+  width:300px;
+  border-bottom-right-radius:9px;
+  border-top-right-radius:9px;
+    border-top-left-radius:9px;
+  background-color:rgba(0,0,0,.5);
+ box-shadow:2px 4px 3px 1px rgba(255,255,255,.4) inset;/*,-7px -10px 10px 0px white;*/
+}
+.settings:hover{
+  height:10%;
+}
+.set-table{
+  display:none;
+  width:100%;
+  height:100%;
+}
+table,tr,td{
+ //border:solid blue 4px; 
+
+
+}
+.set-row1,.set-row2{
+  height:50%;
+}
+.set-btn{
+  width:100%;
+  height:100%;
+}
+
+.footName>p{
+  font-size:20px;
+  margin-top:30px;
+}
+.myFooter{
+  position:absolute;
+  bottom:0px;
+  width:100%;
+  height:128px;
+  box-shadow:0px 60px 20px -55px black inset;
+  background-color:rgba(67, 49, 76, 1.0);
+  color:rgba(255,255,255,1);
+  z-index:10;
+}
+#zipcode{
+	display:none;
+}
+
+/*code test box*/
+
+/*.allJSON{
+  position: fixed;
+  top: 22%;
+  left: 300px;
+  height:60%;
+  width:57%;
+  overflow: auto;
+  border: solid aqua 3px;
+
+  
+}*/
+
+
+
+  

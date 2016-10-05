@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    sd<html>
+  <head>
+    <title>The Weather App</title>
+<!--     <link rel="stylesheet" type="txt/css" href="https://github.com/WiseNN/myGridRep.git"> -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">	
+    <xhtml:link href="http://vibecityent.com/blacksota/SVG/weatherSVG/colorful/svg/27.svg" rel="stylesheet" type="text/css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+      <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>  
+
+
+          <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.0/p5.min.js"></script>  -->
+    </head>
+  
+ <body class="grid-container fullBody">
+   
+  <div class="col-6 header">
+   <div class="appTitleBox">
+    <p class="appTitle">The Weather App</p>
+   </div>
+      <div class="breakBox">
+        <hr class="break headBreak">
+      </div>
+    <div class="query">  
+      <input class="inVal" id="city" type="text" placeholder="enter name of City" ><input\>
+      <input class="inVal" id="state" type="text" placeholder="enter name of State"><input\>
+      <input class="inVal" id="zipcode" type="text" placeholder="zipcode" ><input\>   
+   </div>     
+     <div class="headButtons"> 
+        <button id="submit">Submit</button>
+        <button id="reset">Reset</button>
+     </div>
+  </div>
+           <footer class="col-6 myFooter">
+        <div class="footName">
+          <p>This Weather Application was created by: Norris Wise Jr.</p>
+          </div>
+      </footer>
+   <div class="location-container">  
+    <div class="location" id="specialLoc">
+      <dl class="listWrapper">
+				
+      <dt id="li1"><span id="locLine_1">list item 1</span><br>
+					<span class="allTemp" id="lowTemp_1">low#</span><i class="fa fa-arrow-down downArrow" ></i>
+					<span class="allTemp" id="hiTemp_1">hi#</span><i class="fa fa-arrow-up upArrow" ></i>
+					<div class="locIcons" id="LiCON_1"></div>
+			</dt>
+                <hr class="break listBreak">
+      <dt id="li2"><span id="locLine_2">list item 2</span><br>
+					<span class="allTemp" id="lowTemp_2">low#</span><i class="fa fa-arrow-down downArrow" ></i>
+					<span class="allTemp" id="hiTemp_2">hi#</span><i class="fa fa-arrow-up upArrow" ></i>
+					<div class="locIcons" id="LiCON_2"></div> 
+			</dt>
+                <hr class="break listBreak">
+      <dt id="li3"><span id="locLine_3">list item 3</span>	<br>
+				  <span class="allTemp" id="lowTemp_3">low#</span><i class="fa fa-arrow-down downArrow" ></i>
+					<span class="allTemp" id="hiTemp_3">hi#</span><i class="fa fa-arrow-up upArrow" ></i>
+					<div class="locIcons" id="LiCON_3"></div> 
+			</dt>
+                <hr class="break listBreak">
+      <dt id="li4"><span id="locLine_4">list item 4</span><br>
+					<span class="allTemp" id="lowTemp_4">low#</span><i class="fa fa-arrow-down downArrow" ></i>
+					<span class="allTemp" id="hiTemp_4">hi#</span><i class="fa fa-arrow-up upArrow" ></i>
+					<div class="locIcons" id="LiCON_4"></div> 
+			</dt>        
+                <hr class="break listBreak">
+     <dt id="li5"><span id="locLine_5">list item 5</span><br>				
+					<span class="allTemp" id="lowTemp_5">low#</span><i class="fa fa-arrow-down downArrow" ></i>
+					<span class="allTemp" id="hiTemp_5">hi#</span><i class="fa fa-arrow-up upArrow" ></i>
+					<div class="locIcons" id="LiCON_5"></div> 
+		 </dt>        
+      </dl>
+    </div> 
+   </div>
+    
+	  <div class="slideBar">
+       
+       <div class="slideBar-title">
+         <h3 id="barTitle">slideBar Title</h3>
+       </div>
+       <div class="imageContainer">
+      <div id="myImage" ></div>
+		   <i id="iconText"></i>
+          </div>
+       
+
+         <button class="temp-gauge" placeholder="temperature"> </button><i id="littleF">℉</i>
+       
+     <div class="settings">
+       <table class="set-table">
+          <tr class="set-row1">
+            <td>
+         <button class="set-btn">
+         <i>settings<i\>
+       </button>
+            </td>
+            <td>
+         <button class="set-btn">
+         <i>settings<i\>
+       </button>
+            </td>
+            <td>
+         <button class="set-btn">
+         <i>settings<i\>
+       </button>
+            </td>            
+          </tr>
+          <tr class="set-row2">
+            <td>
+         <button class="set-btn">
+         <i>settings<i\>
+       </button>
+            </td>
+            <td>
+         <button class="set-btn">
+         <i>settings<i\>
+       </button>
+            </td>
+            <td>
+         <button class="set-btn">
+         <i>settings<i\>
+       </button>
+            </td>            
+          </tr>              
+         
+          
+       </table>
+
+
+     </div>
+  
+       
+    </div>
+ 
+ </body>
+      
+        <script>
+// <![CDATA[<img src="http://l.yimg.com/a/i/us/we/52/26.gif"/> <BR /> <b>Current Conditions:</b> <BR />Cloudy <BR /> <BR /> <b>Forecast:</b> <BR /> Mon - Scattered Showers. High: 41Low: 39 <BR /> Tue - Rain. High: 41Low: 39 <BR /> Wed - Rain. High: 42Low: 39 <BR /> Thu - Scattered Showers. High: 42Low: 38 <BR /> Fri - Mostly Cloudy. High: 46Low: 36 <BR /> <BR /> <a href="http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2460286/">Full Forecast at Yahoo! Weather</a> <BR /> <BR /> (provided by <a href="http://www.weather.com" >The Weather Channel</a>) <BR /> //]]>
+        </script>          
+
+  
+  </html>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+  </body>
+</html>
